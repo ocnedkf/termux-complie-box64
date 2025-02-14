@@ -30,4 +30,8 @@
 <br>
 apt update && apt install cmake build-essential python3 gcc
 <br>
-七，
+七，下载box64
+<br>
+git clone https://github.com/ptitSeb/box64
+<br>
+八，
