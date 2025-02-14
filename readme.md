@@ -26,4 +26,8 @@
 <br>
 （此后所有步骤均在其中执行)
 <br>
-六，
+六，安装必要的编译程序
+<br>
+apt update && apt install cmake build-essential python3 gcc
+<br>
+七，
