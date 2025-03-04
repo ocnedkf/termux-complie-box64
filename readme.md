@@ -26,12 +26,28 @@
 <br>
 （此后所有步骤均在其中执行)
 <br>
-六，安装必要的编译程序
+六，安装必要的编译程序等
 <br>
-apt update && apt install cmake build-essential python3 gcc
+apt update && apt install cmake build-essential python3 gcc git
 <br>
 七，下载box64
 <br>
 git clone https://github.com/ptitSeb/box64
 <br>
-八，
+八，编译box64
+<br>
+输入：
+<br>
+cd box64
+<br>
+mkdir build
+<br>
+cd build
+<br>
+cmake .. -DCMAKE_BUILD_TYPE=RelWithDebInfo -DARM64=1
+<br>
+等待配置完成(返回root@localhost:~/box64#)后输入：
+<br>
+make -j$(nproc)
+<br>
+开始编译，等待一段时间后即可
