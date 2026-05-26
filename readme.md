@@ -51,3 +51,8 @@ cmake .. -DCMAKE_BUILD_TYPE=RelWithDebInfo -DARM64=1
 make -j$(nproc)
 <br>
 开始编译，等待一段时间后即可
+<br>
+注意：若需要在termux-glibc环境内使用，务必执行以下命令
+patchelf --set-interpreter /data/data/com.termux/files/usr/glibc/lib/ld-linux-aarch64.so.1 /path/to/box64
+<br>
+将/path/to/box64替换为实际路径
